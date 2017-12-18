@@ -27,12 +27,12 @@ Bot.on('message', message => {
 	message.author.send {
 		embed: {
 			title: "Hey there, "..message.author.username.."! Here's a list of commands you can try!";
-			fields: {
-				{name: "!fire ping", value: "I'll reply with 'Pong' after I register what you said!"};
-				{name: "!fire help", value: "I'll message you with what you're seeing right here!"};
-				{name: "!fire roastme", value: "I'll attempt to roast you with some lit insults, fam!"};
-				{name: "!fire roast @user", value: "I'll attempt to roast another user, similarly to !fire roastme!"};
-			},
+			fields: [
+				{name: "!fire ping", value: "I'll reply with 'Pong' after I register what you said!", inline: true};
+				{name: "!fire help", value: "I'll message you with what you're seeing right here!", inline: true};
+				{name: "!fire roastme", value: "I'll attempt to roast you with some lit insults, fam!", inline: true};
+				{name: "!fire roast @user", value: "I'll attempt to roast another user, similarly to !fire roastme!", inline: true};
+			];
 			//color:
 		}
 	}
