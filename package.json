@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Jeta \"Firefaul\" Ryman",
+  "author": "Jeta Ryman",
   "license": "ISC",
   "dependencies": {
     "discord": "^0.8.2"
