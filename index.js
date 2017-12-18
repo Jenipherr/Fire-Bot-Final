@@ -23,9 +23,20 @@ Bot.on('message', message => {
   if (message.content.toLowerCase() === "!fire ping") {
     message.reply("Pong!");
   };
-  /*if (message.content.toLowerCase() == "!fire help") {
-	  message.author.dmChannel.send("Currently the only command is !fire ping.")
-  };*/
+  if (message.content.toLowerCase() == "!fire help") {
+	message.author.send {
+		embed: {
+			title: "Hey there, "..message.author.username.."! Here's a list of commands you can try!";
+			fields: {
+				{name: "!fire ping", value: "I'll reply with 'Pong' after I register what you said!"};
+				{name: "!fire help", value: "I'll message you with what you're seeing right here!"};
+				{name: "!fire roastme", value: "I'll attempt to roast you with some lit insults, fam!"};
+				{name: "!fire roast @user", value: "I'll attempt to roast another user, similarly to !fire roastme!"};
+			},
+			//color:
+		}
+	}
+  };
 });
 
 Bot.login(process.env.BOT_TOKEN);
