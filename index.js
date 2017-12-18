@@ -32,7 +32,7 @@ Bot.on('message', message => {
 				{name: "!fire help", value: "I'll message you with what you're seeing right here!", inline: true};
 				{name: "!fire roastme", value: "I'll attempt to roast you with some lit insults, fam!", inline: true};
 				{name: "!fire roast @user", value: "I'll attempt to roast another user, similarly to !fire roastme!", inline: true};
-			];
+			]
 			//color:
 		}
 	}
