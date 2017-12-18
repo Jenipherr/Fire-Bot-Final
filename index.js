@@ -22,10 +22,6 @@ Bot.on("ready", function() {
 Bot.on('message', message => {
   if (message.content.toLowerCase() === "!fire ping") {
     message.reply("Pong!");
-else
-	if (message.content.toLowerCase().match("!fire")) then
-		message.reply("That isn't an available command.");
-	end
   };
   /*if (message.content.toLowerCase() == "!fire help") {
 	  message.author.dmChannel.send("Currently the only command is !fire ping.")
