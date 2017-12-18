@@ -2,7 +2,7 @@
 
 const Discord = require("discord.js");
 const Version = "1.0.0";
-const Token = "Mjg3NzY4OTg2ODc4MjE0MTQ0.DRdSkw.KPwRAwmfloW0-TleP7u2Kdjx8_k";
+const Token = "You can't get this.";
 var Bot = new Discord.Client;
 /*var StartupChannelId = "389963025722900484";
 var StartChannel = Bot.channels.get(StartupChannelId);
@@ -19,4 +19,4 @@ Bot.on("ready", function() {
 	StartChannel.send("FireBot initialized!");
 })
 
-Bot.login(Token);
+Bot.login(process.env.BOT_TOKEN);
