@@ -12,7 +12,6 @@ var Insult1 = ["hair", "face", "arm", "leg", "head"];
 var Insult2 = ["stupid", "ugly", "skinny", "thicc", "invisible", "short", "long"];
 var Insult3 = ["you can't ride a bike", "your mirror breaks when you look at it", "it's nonexistant", "you're stupid", "you look like Peter Pan"];
 
-
 var Owner = "229403861721415681";
 
 // Functions
@@ -29,7 +28,7 @@ Bot.on("ready", function() {
 	var StartupChannelId = "389963025722900484";
 	var StartChannel = Bot.channels.get(StartupChannelId);
 	StartChannel.send("FireBot initialized!");
-	Bot.user.setGame("!fire help");
+	Bot.setGame("!fire help");
 });
 
 Bot.on('message', message => {
@@ -49,9 +48,9 @@ Bot.on('message', message => {
 		}
     });
   };
-  if (message.content.toLowerCase()) == "!fire roastme") {
-	message:reply("your "+RandomFromTable(Insult1)+" is so "..RandomFromTable(Insult2)+", "+RandomFromTable(Insult3)+".")	  
-  }
+  if (message.content.toLowerCase() == "!fire roastme") {
+	message.reply("your "+RandomFromTable(Insult1)+" is so "+RandomFromTable(Insult2)+", "+RandomFromTable(Insult3)+".");	  
+  };
 });
 
 Bot.login(process.env.BOT_TOKEN);
