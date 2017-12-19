@@ -28,7 +28,7 @@ Bot.on("ready", function() {
 	var StartupChannelId = "389963025722900484";
 	var StartChannel = Bot.channels.get(StartupChannelId);
 	StartChannel.send("FireBot initialized!");
-	Bot.setGame("!fire help");
+	Bot.user.setGame("!fire help");
 });
 
 Bot.on('message', message => {
