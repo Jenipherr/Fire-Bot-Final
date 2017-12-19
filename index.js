@@ -17,7 +17,7 @@ var Owner = "229403861721415681";
 // Functions
 
 function RandomFromTable(Table) { 
-    var Random = Math.floor( ( Math.random() * Table.length)) + 1;
+    var Random = Math.floor( Math.random()) * Table.Length;
     return Table[Random];
 };
 
