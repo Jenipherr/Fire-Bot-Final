@@ -17,7 +17,7 @@ var Owner = "229403861721415681";
 // Functions
 
 function RandomFromTable(Table) { 
-    var Random = Math.floor((Math.random() * Table.length) + 1);
+    var Random = Math.floor((Math.random() * (Table.length - 1)) + 1);
     return Table[Random];
 };
 
@@ -49,8 +49,11 @@ Bot.on('message', message => {
     });
   };
   if (message.content.toLowerCase() == "!fire roastme") {
-	
-	message.reply("your "+RandomFromTable(Insult1)+" is so "+RandomFromTable(Insult2)+", "+RandomFromTable(Insult3)+".");	  
+	var x = RandomFromTable(Insult1),	
+	    y = RandomFromTable(Insult2),
+	    z = RandomFromTable(Insult3);
+	  
+	message.reply("your "+RandomFromTable(x)+" is so "+RandomFromTable(y)+", "+RandomFromTable(z)+".");	  
   };
 });
 
