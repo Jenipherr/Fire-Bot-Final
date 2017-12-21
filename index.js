@@ -16,9 +16,19 @@ var Owner = "229403861721415681";
 
 // Functions
 
+/*
 function RandomFromTable(Table) { 
     var Random = Math.floor((Math.random() * (Table.length - 1)) + 1);
     return Table[Random];
+};
+*/
+
+function getRoast() { 
+	var x = Math.floor((Math.random() * (Insult1.length - 1)) + 1);
+	var y = Math.floor((Math.random() * (Insult2.length - 1)) + 1);
+	var z = Math.floor((Math.random() * (Insult3.length - 1)) + 1);
+	
+	return ("your "+ x +" is so "+	y  +", "+ z +".");
 };
 
 // Initialize
@@ -49,11 +59,14 @@ Bot.on('message', message => {
     });
   };
   if (message.content.toLowerCase() == "!fire roastme") {
-	var x = RandomFromTable(Insult1),	
+	/*var x = RandomFromTable(Insult1),	
 	    y = RandomFromTable(Insult2),
 	    z = RandomFromTable(Insult3);
 	  
-	message.reply("your "+RandomFromTable(x)+" is so "+RandomFromTable(y)+", "+RandomFromTable(z)+".");	  
+	message.reply("your "+RandomFromTable(x)+" is so "+RandomFromTable(y)+", "+RandomFromTable(z)+".");	
+	*/
+	  
+	message.reply(getRoast());
   };
 });
 
