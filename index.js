@@ -28,6 +28,10 @@ function getRoast() {
 	var y = Math.floor((Math.random() * (Insult2.length - 1)) + 1);
 	var z = Math.floor((Math.random() * (Insult3.length - 1)) + 1);
 	
+	x = Insult1[x];
+	y = Insult2[y];
+	z = Insult3[z];
+	
 	return ("your "+ x +" is so "+	y  +", "+ z +".");
 };
 
