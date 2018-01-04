@@ -8,9 +8,9 @@ var Bot = new Discord.Client;
 var StartChannel = Bot.channels.get(StartupChannelId);
 */
 
-var Insult1 = ["hair", "face", "arm", "leg", "head", "mom", "dick"];
-var Insult2 = ["stupid", "ugly", "skinny", "thicc", "invisible", "short", "long", "shit", "bitchy"];
-var Insult3 = ["you can't ride a bike", "your mirror breaks when you look at it", "it's nonexistant", "you're stupid", "you look like Peter Pan", "it's shit", "it's bitchy"];
+var Insult1 = ["hair", "face", "arm", "leg", "head", "mom", "dick", "roast game", "pizza"];
+var Insult2 = ["stupid", "ugly", "skinny", "thicc", "invisible", "short", "long", "shit", "bitchy", "bad"];
+var Insult3 = ["you can't ride a bike", "your mirror breaks when you look at it", "it's nonexistant", "you're stupid", "you look like Peter Pan", "it's shit", "it's bitchy", "not even dating sims would date you", "it made one direction go the other direction"];
 
 var Owner = "229403861721415681";
 
