@@ -8,7 +8,7 @@ var Bot = new Discord.Client;
 var StartChannel = Bot.channels.get(StartupChannelId);
 */
 
-var Insult1 = ["hair", "face", "arm", "leg", "head"];
+var Insult1 = ["hair", "face", "arm", "leg", "head", "mom"];
 var Insult2 = ["stupid", "ugly", "skinny", "thicc", "invisible", "short", "long"];
 var Insult3 = ["you can't ride a bike", "your mirror breaks when you look at it", "it's nonexistant", "you're stupid", "you look like Peter Pan"];
 
