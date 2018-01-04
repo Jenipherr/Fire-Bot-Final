@@ -12,6 +12,12 @@ var Insult1 = ["hair", "face", "arm", "leg", "head", "mom", "dick", "roast game"
 var Insult2 = ["stupid", "ugly", "skinny", "thicc", "invisible", "short", "long", "shit", "bitchy", "bad"];
 var Insult3 = ["you can't ride a bike", "your mirror breaks when you look at it", "it's nonexistant", "you're stupid", "you look like Peter Pan", "it's shit", "it's bitchy", "not even dating sims would date you", "it made one direction go the other direction"];
 
+
+var Compliment1 = {"face", "hair", "arm", "head", "mom", "roast game", "pizza"}
+var Compliment2 = {"nice", "smart", "good", "on fleek", "amazing", "neat", "badass"}
+var Compliment3 = {"it's fun to be around", "it's awesome", "it's amazing", "it's cool", "it makes you look good", "it looks badass"}
+
+
 var Owner = "229403861721415681";
 
 // Functions
@@ -31,6 +37,18 @@ function getRoast() {
 	x = Insult1[x];
 	y = Insult2[y];
 	z = Insult3[z];
+	
+	return ("your "+ x +" is so "+	y  +", "+ z +".");
+};
+
+function getCompliment() { 
+	var x = Math.floor((Math.random() * (Compliment1.length - 1)) + 1);
+	var y = Math.floor((Math.random() * (Compliment2.length - 1)) + 1);
+	var z = Math.floor((Math.random() * (Compliment3.length - 1)) + 1);
+	
+	x = Compliment1[x];
+	y = Compliment2[y];
+	z = Compliment3[z];
 	
 	return ("your "+ x +" is so "+	y  +", "+ z +".");
 };
@@ -71,6 +89,16 @@ Bot.on('message', message => {
 	*/
 	  
 	message.reply(getRoast());
+  };
+  if (message.content.toLowerCase() == "!fire complimentme") {
+	/*var x = RandomFromTable(Insult1),	
+	    y = RandomFromTable(Insult2),
+	    z = RandomFromTable(Insult3);
+	  
+	message.reply("your "+RandomFromTable(x)+" is so "+RandomFromTable(y)+", "+RandomFromTable(z)+".");	
+	*/
+	  
+	message.reply(getCompliment());
   };
 });
 
