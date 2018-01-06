@@ -90,8 +90,8 @@ Bot.on('message', message => {
 	  
 	message.reply(getCompliment());
   };
-	if (message.content.toLowerCase() == "just") {
-		message.channel.send("Monika")
+	if (message.content.toLowerCase() == "hey hey") {
+		message.channel.send("Just Monika")
 	}
 });
 
